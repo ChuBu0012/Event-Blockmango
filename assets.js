@@ -12,7 +12,6 @@ fetch("https://gamertocoder.garena.co.th/api/assets")
   .catch((err) => console.log(err));
 //set data
 const setAssets = (data) => {
-  const datas = data;
   const banner = data.banner;
   const benny = data.benny;
   const characters = data.characters;

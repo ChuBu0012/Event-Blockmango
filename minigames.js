@@ -7,6 +7,11 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
     return res.json();
   })
   .then((data) => {
-    setAssets(data);
+    setMinigames(data);
   })
   .catch((err) => console.log(err));
+
+const setMinigames = (datas) =>{
+  const Minigames = datas
+
+}
