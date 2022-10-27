@@ -1,0 +1,33 @@
+.download{
+    width: 221px;
+    height: 84px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    border-left: 5px solid rgba(236, 197, 73,0);
+    border-right: 5px solid rgba(236, 197, 73,0);
+    margin-top: -30%;
+    transition: .3s;
+  }
+  .playnow{
+    position: relative;
+    width: 204px;
+    height: 84px;
+    font-family: "Bloxat";
+    outline: none;
+    font-size: 32px;
+    background: rgba(236, 197, 73,.6);
+    border: none;
+    box-shadow: inset 0 0 0 0 #3fa3ff;
+    transition: .3s;
+  }
+  .playnow:hover{
+    box-shadow: inset 204px 0 0 0 #3fa3ff;
+    color: #d3fff8;
+  }
+  .download:hover{
+    border-left: 5px solid rgba(236, 197, 73,1);
+    border-right: 5px solid rgba(236, 197, 73,1);
+  }
+  
