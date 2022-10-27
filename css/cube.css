@@ -1,0 +1,127 @@
+.scene {
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin: 80px;
+    perspective: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -280px;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform: rotateY(65deg);
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(359deg);
+      }
+  }
+
+.cube.show-front {
+    transform: translateZ(-50px) rotateY(0deg);
+}
+
+.cube.show-right {
+    transform: translateZ(-50px) rotateY(-90deg);
+}
+
+.cube.show-back {
+    transform: translateZ(-50px) rotateY(-180deg);
+}
+
+.cube.show-left {
+    transform: translateZ(-50px) rotateY(90deg);
+}
+
+.cube.show-top {
+    transform: translateZ(-50px) rotateX(-90deg);
+}
+
+.cube.show-bottom {
+    transform: translateZ(-50px) rotateX(90deg);
+}
+
+.cube__face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.cube__face--front {
+    background: hsla(0, 100%, 50%, 0.7);
+}
+
+.cube__face--right {
+    background: hsla(60, 100%, 50%, 0.7);
+}
+
+.cube__face--back {
+    background: hsla(120, 100%, 50%, 0.7);
+}
+
+.cube__face--left {
+    background: hsla(180, 100%, 50%, 0.7);
+}
+
+.cube__face--top {
+    background: hsla(240, 100%, 50%, 0.7);
+}
+
+.cube__face--bottom {
+    background: hsla(300, 100%, 50%, 0.7);
+}
+
+.cube__face--front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.cube__face--right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube__face--back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.cube__face--left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube__face--top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+#cartoon img {
+    height: 480px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -130px;
+    padding-left: 50px;
+}
+@media (max-width: 1280px) {
+    .scene{
+        margin-top: -140px;
+    }
+}

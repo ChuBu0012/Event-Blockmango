@@ -17,12 +17,13 @@ const setAssets = (data) => {
   const characters = data.characters;
   const logo = data.logo;
   const wallpaper = data.wallpaper;
-
   const slider = document.querySelector(".slider");
   const boxSlide = document.querySelector(".box-slide");
   const nextBtn = document.querySelector(".next-btn");
   const prevBtn = document.querySelector(".prev-btn");
   const navigationVisibility = document.querySelector(".navigation-visibility");
+  document.getElementById("cartoon").innerHTML = "<img src = '" + characters[9] + "'>";
+  document.getElementById("lg").innerHTML = "<img src = '" + logo[1] + "'>";
   //component slideImg & slideIcon
   banner.reverse();
   banner.forEach((ele, index) => {

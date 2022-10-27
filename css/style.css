@@ -16,4 +16,8 @@
   src: url("./font/Bloxat-PDoE.ttf");
 }
 
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("./font/MinecraftTen-VGORe.ttf");
+}
 

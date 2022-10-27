@@ -13,5 +13,6 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
 
 const setMinigames = (datas) =>{
   const Minigames = datas
+  console.log(datas);
 
 }
