@@ -28,7 +28,7 @@
  .carousel_item__active,
  .carousel_item__pos_next{
     display: block;
-    height: 650px;
+    height: 100%;
  }
 
  .carousel_item__pos_next{

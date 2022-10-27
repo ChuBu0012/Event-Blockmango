@@ -6,7 +6,7 @@ nav {
 #NavBar {
   width: 100%;
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--bgNavbar);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

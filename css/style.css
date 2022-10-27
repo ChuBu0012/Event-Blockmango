@@ -1,5 +1,6 @@
 :root {
   --bg-NavBar: transparent;
+  --bgNavbar: rgba(0, 0, 0, 0.65);
 }
 
 * {
