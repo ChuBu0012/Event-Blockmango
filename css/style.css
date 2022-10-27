@@ -1,0 +1,17 @@
+:root {
+  --bg-NavBar: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+@font-face {
+  font-family: "Bloxat";
+  src: url("./font/Bloxat-PDoE.ttf");
+}

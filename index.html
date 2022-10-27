@@ -10,10 +10,85 @@
       type="image/x-icon"
     />
     <title>Blockman Go</title>
+    <link
+      rel="stylesheet"
+      href="./css/font/fontawesome-6.2.0/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/NavBar.css" />
+    <link rel="stylesheet" href="./css/bg-fade.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="NavBar" id="NavBar">
+        <!-- logo -->
+        <img
+          src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png"
+          alt=""
+        />
+        <!-- menu -->
+        <ul class="List-NavBar">
+          <a href="./index.html">
+            <li class="header Home" style="--h-color: rgb(255, 85, 119);" data-text="Home">
+              Home
+            </li>
+          </a>
+          <a href="#">
+            <li
+              class="header Character"
+              style="--h-color: #1345f2"
+              data-text="Character"
+            >
+              Character
+            </li>
+          </a>
+          <a href="#">
+            <li
+              class="header Minigames"
+              style="--h-color: #F57328"
+              data-text="Minigames"
+            >
+              Minigames
+            </li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Background -->
+    <div class="carousel carousel__fade">
+      <div class="carousel_inner">
+        <div class="carousel_item carousel_item__active">
+          <img
+            src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-wallpaper/02.jpg"
+            alt=""
+            class="carousel_img"
+          />
+        </div>
+        <div>
+          <div class="carousel_item">
+            <img
+              src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-wallpaper/03.jpg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-wallpaper/01.jpg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- link script -->
     <script src="./js/assets.js"></script>
     <script src="./js/minigames.js"></script>
+    <script src="./js/bgFade.js"></script>
   </body>
 </html>
