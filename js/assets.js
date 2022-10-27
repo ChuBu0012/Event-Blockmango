@@ -22,7 +22,10 @@ const setAssets = (data) => {
   const nextBtn = document.querySelector(".next-btn");
   const prevBtn = document.querySelector(".prev-btn");
   const navigationVisibility = document.querySelector(".navigation-visibility");
-  document.getElementById("cartoon").innerHTML = "<img src = '" + characters[9] + "'>";
+  // insert characters & logo footer
+  const cartoon = document.getElementById("cartoon");
+  // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
+  cartoon.innerHTML = `<img src='${characters[9]}'>`;
   document.getElementById("lg").innerHTML = "<img src = '" + logo[1] + "'>";
   //component slideImg & slideIcon
   banner.reverse();

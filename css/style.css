@@ -1,5 +1,5 @@
-:root{
-  --w-btn:203px;
+:root {
+  --w-btn: 203px;
 }
 
 * {
@@ -11,6 +11,25 @@
   color: #000;
 }
 
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-wallpaper/02.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 @font-face {
   font-family: "Bloxat";
   src: url("./font/Bloxat-PDoE.ttf");
@@ -20,4 +39,23 @@
   font-family: "MinecraftTen";
   src: url("./font/MinecraftTen-VGORe.ttf");
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161;
+}
