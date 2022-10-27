@@ -15,8 +15,9 @@
       href="./css/font/fontawesome-6.2.0/fontawesome-free-6.2.0-web/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/NavBar.css" />
-    <link rel="stylesheet" href="./css/btn.css">
     <link rel="stylesheet" href="./css/bg-fade.css" />
+    <link rel="stylesheet" href="./css/Banner.css" />
+    <link rel="stylesheet" href="./css/btn.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -24,14 +25,21 @@
     <nav>
       <div class="NavBar" id="NavBar">
         <!-- logo -->
-        <img
-          src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png"
-          alt=""
-        />
+        <a href="#">
+          <img
+            src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png"
+            alt=""
+            id="logo"
+          />
+        </a>
         <!-- menu -->
         <ul class="List-NavBar">
           <a href="./index.html">
-            <li class="header Home" style="--h-color: rgb(255, 85, 119);" data-text="Home">
+            <li
+              class="header Home"
+              style="--h-color: rgb(245, 44, 84)"
+              data-text="Home"
+            >
               Home
             </li>
           </a>
@@ -47,7 +55,7 @@
           <a href="#">
             <li
               class="header Minigames"
-              style="--h-color: #F57328"
+              style="--h-color: #fd7f2c"
               data-text="Minigames"
             >
               Minigames
@@ -85,10 +93,25 @@
         </div>
       </div>
     </div>
-    <div class="download">
-      <button class="playnow">play now!</button>
+
+    <span class="clearfix"></span>
+
+    <div id="download">
+      <a class="playnow">play now!</a>
     </div>
 
+    <!-- Banner -->
+    <div class="slider">
+      <!-- slide img -->
+      <div class="box-slide"></div>
+      <!-- next & prev btn -->
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <!-- show slide-active-icon -->
+      <div class="navigation-visibility"></div>
+    </div>
 
     <!-- link script -->
     <script src="./js/assets.js"></script>
