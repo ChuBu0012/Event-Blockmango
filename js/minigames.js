@@ -94,7 +94,7 @@ const setMinigames = (datas) => {
     const img = ele.icon;
     CardImg.src = img;
 
-    divCardImg.appendChild(CardImg);
+    divCardImg?.appendChild(CardImg);
 
     // card Content
     const divCardContent = document.createElement("div");
@@ -135,14 +135,14 @@ const setMinigames = (datas) => {
     playLink.href = "";
     const btnPlay = document.createElement("button")
     btnPlay.innerHTML = "Play!"
-    playLink.appendChild(btnPlay)
-    divCardPlay.appendChild(playLink);
+    playLink?.appendChild(btnPlay)
+    divCardPlay?.appendChild(playLink);
 
-    divCardItem.appendChild(divCardImg);
-    divCardItem.appendChild(divCardContent);
-    divCardItem.appendChild(divCardGenre);
-    divCardItem.appendChild(divCardPlay);
+    divCardItem?.appendChild(divCardImg);
+    divCardItem?.appendChild(divCardContent);
+    divCardItem?.appendChild(divCardGenre);
+    divCardItem?.appendChild(divCardPlay);
 
-    cardBox.appendChild(divCardItem);
+    cardBox?.appendChild(divCardItem);
   });
 };
