@@ -1,0 +1,141 @@
+/* Fun with mini games */
+.text {
+    display: block;
+    width: 600px;
+    height: 360px;
+    background: rgba(0, 0, 0, .7);
+    margin-left: 128px;
+    font-size: 60px;
+    margin-top: -400px;
+    margin-bottom: 300px;
+    box-shadow: 0 0 16px rgb(238, 149, 149);
+}
+
+.iconbox {
+    width: 15%;
+    height: 100%;
+    background: aqua;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.iconbox1 {
+    width: 15%;
+    height: 100%;
+    background: aqua;
+    display: inline-block;
+}
+
+.iconbox img {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.iconbox1 img {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.text span {
+    position: absolute;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.m1,
+.m2 {
+    margin-top: 20px;
+    margin-left: 48px;
+    font-family: "Bloxat";
+    color: #fff;
+}
+
+.m3 {
+    margin-top: 20px;
+    margin-left: 36px;
+    font-family: "MinecraftTen";
+    color: rgb(238, 149, 149);
+}
+
+/* Many Characters */
+.charac{
+    width: 530px;
+    height: 450px;
+    background: rgba(0, 0, 0, .7);
+    margin-left: 1300px;
+    margin-top: -700px;
+    margin-bottom: 300px;
+    box-shadow: 0 0 16px rgb(238, 149, 149);
+}
+.charimg{
+    margin-left: 20px;
+}
+.charac .mct{
+    text-align: center;
+    color: #fff;
+    font-size: 52px;
+    font-family: "Bloxat";
+}
+.column1{
+    margin-top: 30px;
+    width: 220px;
+    height: auto;
+    display: inline-block;
+    margin-left: -50px;
+}
+.column2{
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    margin-left: -50px;
+}
+
+
+/* responsive */
+@media (max-width: 1440px) {
+    .text {
+        width: 400px;
+        height: 240px;
+        margin-left: 60px;
+        margin-top: -400px;
+        font-size: 40px;
+    }
+
+    .text span {
+        position: absolute;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .charac{
+        width: 397.5px;
+        height: 337.5px;
+        margin-left: 840px;
+        margin-top: -600px;
+    }
+    .charimg{
+        margin-left: 60px;
+    }
+    .column1{
+        margin-top: 30px;
+        width: 160px;
+        height: auto;
+        display: inline-block;
+        margin-left: -50px;
+    }
+    .column2{
+        width: 110px;
+        height: auto;
+        display: inline-block;
+        margin-left: -50px;
+    }
+    .charac .mct{
+        font-size: 35px;
+        margin-left: -60px;
+    }
+}

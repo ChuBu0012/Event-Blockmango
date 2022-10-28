@@ -17,6 +17,7 @@ const setAssets = (data) => {
   const characters = data.characters;
   const logo = data.logo;
   const wallpaper = data.wallpaper;
+  console.log(characters);
   const slider = document.querySelector(".slider");
   const boxSlide = document.querySelector(".box-slide");
   const nextBtn = document.querySelector(".next-btn");
@@ -24,6 +25,25 @@ const setAssets = (data) => {
   const navigationVisibility = document.querySelector(".navigation-visibility");
   // insert characters & logo footer
   const cartoon = document.getElementById("cartoon");
+  for (let num = 3; num < 12; num++) {
+    num += 2
+    const crt = document.createElement('img');
+    crt.className = "column1";
+    crt.src = characters[num]
+    document.getElementById("crt").appendChild(crt);
+    
+  }
+  for (let num = 0; num < 5; num++) {
+    const crt = document.createElement('img');
+    crt.className = "column2";
+    crt.src = characters[num]
+    document.getElementById("crt").appendChild(crt);
+  }
+  const mng = document.createElement('div');
+  mng.innerHTML = "Enjoy with<br> many Characters"
+  mng.className = "mct"
+  document.getElementById("crt").appendChild(mng);
+
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
   cartoon.innerHTML = `<img src='${characters[9]}'>`;
   document.getElementById("lg").innerHTML = "<img src = '" + logo[1] + "'>";

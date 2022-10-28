@@ -12,7 +12,16 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
   .catch((err) => console.log(err));
 
 const setMinigames = (datas) =>{
-  const Minigames = datas
+  const Minigames = datas;
   console.log(datas);
-
+  for (let icn = 0; icn < 4; icn++) {
+    const icon = document.createElement('img');
+    icon.src = datas[icn]['icon']
+    document.getElementById("icongame").appendChild(icon);
+  }
+  for (let icn = 4; icn < 8; icn++) {
+    const icon = document.createElement('img');
+    icon.src = datas[icn]['icon']
+    document.getElementById("icongame1").appendChild(icon);
+  }
 }
