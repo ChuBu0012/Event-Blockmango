@@ -3,7 +3,7 @@
     display: block;
     width: 600px;
     height: 360px;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
     margin-left: 128px;
     font-size: 60px;
     margin-top: -400px;
@@ -50,10 +50,10 @@
 
 .m1,
 .m2 {
+    color: #fff;
     margin-top: 20px;
     margin-left: 48px;
     font-family: "Bloxat";
-    color: #fff;
 }
 
 .m3 {
@@ -67,7 +67,7 @@
 .charac{
     width: 530px;
     height: 450px;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
     margin-left: 1300px;
     margin-top: -700px;
     margin-bottom: 300px;
@@ -81,6 +81,7 @@
     color: #fff;
     font-size: 52px;
     font-family: "Bloxat";
+    margin-top: 2rem;
 }
 .column1{
     margin-top: 30px;
@@ -137,5 +138,34 @@
     .charac .mct{
         font-size: 35px;
         margin-left: -60px;
+    }
+}
+@media (min-width: 1440px){
+    .charac{
+        width: 397.5px;
+        height: 337.5px;
+        margin-left: 980px;
+        margin-top: -600px;
+    }
+}
+
+@media (min-width: 1441px){
+    .charac{
+        width: 530px;
+        height: 400.5px;
+        margin-left: 980px;
+        margin-top: -600px;
+    }
+    .text{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1025px){
+    .charac{
+        display: none;
+    }
+    .text{
+        display: none;
     }
 }

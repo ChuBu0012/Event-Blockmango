@@ -25,19 +25,14 @@ const setAssets = (data) => {
   const navigationVisibility = document.querySelector(".navigation-visibility");
   // insert characters & logo footer
   const cartoon = document.getElementById("cartoon");
-  for (let num = 3; num < 12; num++) {
-    num += 2
+  for (let num = 7; num <= 10; num++) {
     const crt = document.createElement('img');
     crt.className = "column1";
     crt.src = characters[num]
-    document.getElementById("crt").appendChild(crt);
-    
-  }
-  for (let num = 0; num < 5; num++) {
-    const crt = document.createElement('img');
-    crt.className = "column2";
-    crt.src = characters[num]
-    document.getElementById("crt").appendChild(crt);
+    document.getElementById("crt").appendChild(crt);    
+    if(num === 8){
+      num++;
+    }
   }
   const mng = document.createElement('div');
   mng.innerHTML = "Enjoy with<br> many Characters"
