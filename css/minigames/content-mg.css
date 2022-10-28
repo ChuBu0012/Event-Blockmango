@@ -1,0 +1,109 @@
+.h-mg {
+  font-size: 1.8rem;
+  letter-spacing: 8px;
+  font-family: "Bloxat";
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-right: 20%;
+}
+
+.h-mg h1 span {
+  color: #fd7f2c;
+  text-shadow: 4px 5px 8px #ffd7bd;
+}
+
+.content{
+  position: relative;
+  
+}
+.content h1 {
+  font-family: "summer";
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.card-box {
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 90%;
+  height: auto;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 50px 0px;
+}
+
+.card-item {
+  width: 320px;
+  height: auto;
+  padding-bottom: 48px;
+
+  background-color: rgba(231, 231, 231, 0.4);
+  border-top-left-radius: var(--br-cardItem);
+  border-top-right-radius: var(--br-cardItem);
+}
+
+.card-img img {
+  width: 100%;
+  border-top-left-radius: var(--br-cardItem);
+  border-top-right-radius: var(--br-cardItem);
+}
+
+.card-content {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-family: summer;
+  margin: 10px 0;
+  font-size: 2rem;
+  color: var(--h-cardItem);
+  text-shadow: 0px -4px 2px var(--sd-h-cardItem);
+}
+.card-content p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Kanit";
+  margin: 1.2rem 0;
+}
+
+.card-genre h3 {
+  font-family: "Kanit";
+  text-align: center;
+  margin-top: 16px;
+  font-size: 18px;
+}
+.card-play {
+  margin-top: 36px;
+}
+.card-play a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bloxat";
+  color: #0f81c7;
+  border: 3.5px solid #0f81c7;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 40%;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+.card-play a button:hover {
+  background-color: #0f81c7;
+  color: #FFF;
+}
+
+@media (min-width: 1280px) {
+  .h-mg {
+    font-size: 2.2rem;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+}

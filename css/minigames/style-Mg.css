@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+:root {
+  --h-cardItem: #000;
+  --sd-h-cardItem: rgba(0, 0, 0, 0.4);
+  --br-cardItem:20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+body {
+  position: relative;
+  background: rgb(239,255,253);
+  background: linear-gradient(180deg, rgba(239,255,253,0.5) 20%, rgba(184,255,249,0.6) 50%, rgba(0, 203, 221, 0.6) 80%);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+  background: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/partystreet/partystreet_02.png")
+    no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.bg-content{
+  position: absolute;
+  top: -5%;
+  opacity: 0.4;
+  z-index: -2;
+  width: 100%;
+}
+.bg-content-2{
+  position: absolute;
+  top: 10%;
+  opacity: 0.4;
+  z-index: -3;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Bloxat";
+  src: url("../font/Bloxat-PDoE.ttf");
+}
+
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("../font/MinecraftTen-VGORe.ttf");
+}
+
+@font-face {
+  font-family: "summer";
+  src: url("../font/SummerPixelWide22Regular-4BoW4.ttf");
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161;
+}

@@ -35,7 +35,7 @@ const setAssets = (data) => {
     }
   }
   const mng = document.createElement('div');
-  mng.innerHTML = "Enjoy with<br> many Characters"
+  mng.innerHTML = "Create your character."
   mng.className = "mct"
   document.getElementById("crt").appendChild(mng);
 
