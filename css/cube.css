@@ -109,7 +109,7 @@
   padding-left: 50px;
 }
 
-#cartoon img:hover {
+#cartoon img:hover{
   animation: bounce 0.8s infinite;
 }
 
