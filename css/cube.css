@@ -105,9 +105,6 @@
   display: block;
   margin-top: -130px;
   padding-left: 50px;
-}
-
-#cartoon img:hover{
   animation: bounce 0.8s infinite;
 }
 
