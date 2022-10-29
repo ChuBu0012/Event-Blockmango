@@ -17,7 +17,14 @@ const setAssets = (data) => {
   const characters = data.characters;
   const logo = data.logo;
   const wallpaper = data.wallpaper;
-  console.log(characters);
+  console.log(logo);
+
+//logo sidebar
+  const logomb = document.createElement('img')
+  logomb.src = logo[0]
+  document.getElementById('logomb').appendChild(logomb)
+
+
   const slider = document.querySelector(".slider");
   const boxSlide = document.querySelector(".box-slide");
   const nextBtn = document.querySelector(".next-btn");

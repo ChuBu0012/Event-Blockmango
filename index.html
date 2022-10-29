@@ -22,11 +22,20 @@
     <link rel="stylesheet" href="./css/cube.css" />
     <link rel="stylesheet" href="./css/invite.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sidebar.css">
   </head>
 
   <body>
     <!-- sidebar -->
-    <div class="bar"></div>
+    <div id="logomb"></div>
+    <div class="sidebar">
+      <button class="open" id="open" onclick="clickopen()"><img src="images/sidebaropen.png"></button>
+  <div class="bar" id="bar">
+      <button class="close" onclick="clickclose()"><img src="images/close.png"></button>
+      <div class="home"><a href="#">Home</a></div>
+      <div class="mg"><a href="#">Minigames</a></div>
+  </div>
+</div>
     <!-- NavBar -->
     <nav>
       <div class="NavBar" id="NavBar">
@@ -179,5 +188,6 @@
     <script src="./js/minigames.js"></script>
     <script src="./js/bgFade.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>
