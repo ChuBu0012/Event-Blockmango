@@ -5,16 +5,34 @@ footer {
   color: #fff;
   padding: 1rem 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo-devby {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.char-left img {
+  height: 20rem;
+  position: absolute;
+  top: -12rem;
+  left: 0;
+ }
+.char-right img {
+ height: 20rem;
+ position: absolute;
+ top: -12rem;
+ right: 0;
 }
 
 .logo-footer-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 16%;
+  width: 56%;
 }
 
 #lg img {
@@ -25,7 +43,6 @@ footer {
   display: block;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-
 }
 #lg {
   padding-top: 10px;
@@ -64,7 +81,7 @@ footer {
   font-family: "MinecraftTen";
 }
 @media (max-width: 500px) {
-  .edit{
+  .edit {
     font-size: 15px;
   }
 }

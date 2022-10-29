@@ -41,7 +41,8 @@ const setAssets = (data) => {
 
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
   cartoon.innerHTML = `<img src='${characters[9]}'>`;
-  document.getElementById("lg").innerHTML = "<img src = '" + logo[1] + "'>";
+
+  
   //component slideImg & slideIcon
   banner.reverse();
   banner.forEach((ele, index) => {

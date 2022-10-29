@@ -8,22 +8,25 @@
     font-size: 60px;
     margin-top: -400px;
     margin-bottom: 300px;
-    box-shadow: 0 0 16px rgb(238, 149, 149);
+    box-shadow: 0 0 16px var(--invite-sd);
+    overflow: hidden;
 }
 
 .iconbox {
     width: 15%;
     height: 100%;
-    background: aqua;
+    background: transparent;
     display: inline-block;
     margin-left: -10px;
+    transition: .1s;
 }
 
 .iconbox1 {
     width: 15%;
     height: 100%;
-    background: aqua;
+    background: transparent;
     display: inline-block;
+    transition: .1s;
 }
 
 .iconbox img {
@@ -32,6 +35,7 @@
     margin-top: auto;
     margin-bottom: auto;
     display: block;
+    transition: .1s;
 }
 
 .iconbox1 img {
@@ -40,6 +44,17 @@
     margin-top: auto;
     margin-bottom: auto;
     display: block;
+    transition: .1s;
+}
+.iconbox1:hover{
+    margin-right: 4px;
+}
+.iconbox1 img:hover,.iconbox img:hover{
+    width: 105%;
+    box-shadow: 1px 1px 4px #fff;
+    border-radius: 4px;
+    margin: 4px 0;
+    margin-right:10px ;
 }
 
 .text span {
@@ -71,7 +86,7 @@
     margin-left: 1300px;
     margin-top: -700px;
     margin-bottom: 300px;
-    box-shadow: 0 0 16px rgb(238, 149, 149);
+    box-shadow: 0 0 16px var(--invite-sd);
 }
 .charimg{
     margin-left: 20px;
@@ -167,7 +182,7 @@
     }
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1200px){
     .charac{
         display: none;
     }

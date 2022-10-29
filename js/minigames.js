@@ -155,7 +155,8 @@ const setMinigames = (datas) => {
     const divCardPlay = document.createElement("div");
     divCardPlay.className = "card-play";
     const playLink = document.createElement("a");
-    playLink.href = "";
+    playLink.target = "_Blank"
+    playLink.href = "https://play.google.com/store/apps/details?id=com.sandboxol.blockymods&hl=th&gl=TH";
     const btnPlay = document.createElement("button");
     btnPlay.innerHTML = "Play!";
     playLink?.appendChild(btnPlay);

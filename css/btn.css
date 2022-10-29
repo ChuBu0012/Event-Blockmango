@@ -3,7 +3,7 @@
   height: 84px;
 
   margin: 0 auto;
-  margin-top: -24%;
+  margin-top: -42%;
 
   text-align: center;
 
@@ -51,6 +51,17 @@
 #download:hover{
   border-left: 5px solid rgba(236, 197, 73, 1);
   border-right: 5px solid rgba(236, 197, 73, 1);
+}
+
+@media (min-width:1280px) {
+  #download{
+    margin-top: -27%;
+  }
+}
+@media (min-width:1440px) {
+  #download{
+    margin-top: -24%;
+  }
 }
 
 
