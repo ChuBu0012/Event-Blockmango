@@ -115,3 +115,12 @@
     margin-top: 28%;
   }
 }
+
+@media (max-width: 500px) {
+  :root {
+    --height-slider: 200px;
+  }
+  .slider{
+    width: 80%;
+  }
+}

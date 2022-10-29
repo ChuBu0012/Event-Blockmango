@@ -19,10 +19,12 @@
   transform: rotateY(65deg);
   animation: mymove 8s infinite;
 }
+
 @keyframes mymove {
   from {
     transform: rotateY(0deg);
   }
+
   to {
     transform: rotateY(359deg);
   }
@@ -107,22 +109,76 @@
   padding-left: 50px;
 }
 
-#cartoon img:hover{
+#cartoon img:hover {
   animation: bounce 0.8s infinite;
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: translateY(5%);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
 @media (max-width: 1280px) {
   .scene {
     margin-top: -140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .scene {
+    margin-top: -10px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .cube {
+    width: 75px;
+    height: 75px;
+  }
+
+  .cube__face {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cube__face--front {
+    transform: rotateY(0deg) translateZ(35px);
+  }
+
+  .cube__face--right {
+    transform: rotateY(90deg) translateZ(35px);
+  }
+
+  .cube__face--back {
+    transform: rotateY(180deg) translateZ(35px);
+  }
+
+  .cube__face--left {
+    transform: rotateY(-90deg) translateZ(35px);
+  }
+
+  .cube__face--top {
+    transform: rotateX(90deg) translateZ(35px);
+  }
+
+  .cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(35px);
+  }
+
+
+  #cartoon img {
+    height: 240px;
+    width: 420px;
+    margin-top: -110px;
+    margin-left: -50px;
   }
 }

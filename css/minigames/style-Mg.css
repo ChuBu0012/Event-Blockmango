@@ -17,7 +17,7 @@
 body {
   position: relative;
   background: rgb(239,255,253);
-  background: linear-gradient(180deg, rgba(239,255,253,0.5) 20%, rgba(184,255,249,0.6) 50%, rgba(0, 203, 221, 0.6) 80%);
+  background: linear-gradient(180deg, rgba(217, 255, 251, 0.5) 0%, rgba(184,255,249,0.6) 50%, rgba(0, 203, 221, 0.6) 80%);
 }
 
 body::before {

@@ -1,4 +1,3 @@
-//Fetch API Minigames
 fetch("https://gamertocoder.garena.co.th/api/minigames")
   .then((res) => {
     if (res.status !== 200) {
@@ -14,6 +13,7 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
 const setMinigames = (datas) => {
   const Minigames = datas;
   const cardBox = document.querySelector(".card-box");
+  var r = document.querySelector(":root");
   // HomePage
   for (let icn = 0; icn < 4; icn++) {
     const icon = document.createElement("img");
@@ -27,7 +27,7 @@ const setMinigames = (datas) => {
   }
 
   // Card
-  // card title color 12 item จำนวนสีที่ใส่ 3, 6 , 12
+
   const hColor = [
     "#E26868",
     "#1C3879",
@@ -45,8 +45,27 @@ const setMinigames = (datas) => {
     "#E9290F",
     "#B73E3E",
   ];
-  //card des color 12 item จำนวนสีที่ใส่ 3, 6 , 12
   let hCount = 0;
+
+  const hsdColor = [
+    "#FF8787",
+    "#495C83",
+    "#f5c1a6",
+
+    "#b79bbf",
+    "#4E6C50",
+    "#DD5353",
+
+    "#7089a1",
+    "#ffac82",
+    "#b09999",
+
+    "#624F82",
+    "#ff8c4a",
+    "#DD5353",
+  ];
+  let hsdCount = 0;
+
   const desColor = [
     "#FF8787",
     "#495C83",
@@ -61,10 +80,11 @@ const setMinigames = (datas) => {
     "#9E7676",
 
     "#624F82",
-    "#FF6107",
+    "#ff8243",
     "#DD5353",
   ];
   let desCount = 0;
+
   const genreColor = [
     "#E26868",
     "#1C3879",
@@ -99,11 +119,14 @@ const setMinigames = (datas) => {
     // card Content
     const divCardContent = document.createElement("div");
     divCardContent.className = "card-content";
-
-    divCardContent.innerHTML += `<h2 style="color:${hColor[hCount]};">${ele.name}</h2>`;
+    divCardContent.innerHTML += `<h2 style="color:${hColor[hCount]}; text-shadow: 0px -4px 2px ${hsdColor[hsdCount]};">${ele.name}</h2>`;
     hCount++;
     if (hCount === hColor.length) {
       hCount = 0;
+    }
+    hsdCount++;
+    if (hsdCount === hsdColor.length) {
+      hsdCount = 0;
     }
 
     let description = ele.description;
@@ -133,9 +156,9 @@ const setMinigames = (datas) => {
     divCardPlay.className = "card-play";
     const playLink = document.createElement("a");
     playLink.href = "";
-    const btnPlay = document.createElement("button")
-    btnPlay.innerHTML = "Play!"
-    playLink?.appendChild(btnPlay)
+    const btnPlay = document.createElement("button");
+    btnPlay.innerHTML = "Play!";
+    playLink?.appendChild(btnPlay);
     divCardPlay?.appendChild(playLink);
 
     divCardItem?.appendChild(divCardImg);

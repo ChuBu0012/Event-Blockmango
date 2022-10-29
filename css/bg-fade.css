@@ -75,3 +75,11 @@
     height: 850px;
   }
 }
+@media (max-width: 500px) {
+   .carousel_img{
+      display: block;
+      width: 400%;
+      margin-left: -165%;
+   }
+   
+}
