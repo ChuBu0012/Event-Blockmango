@@ -160,6 +160,12 @@
         margin-left: 50px;
     }
 }
+@media (min-width: 1800px){
+    .charac{
+        margin-left: 1200px;
+        margin-top: -670px;
+    }
+}
 
 @media (max-width: 1025px){
     .charac{
