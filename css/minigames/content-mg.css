@@ -192,16 +192,14 @@
   .h-content img {
     top: 100px;
   }
-<<<<<<< HEAD
-=======
+
 }
 
 @media (min-width: 1440px) {
   .card-item {
     width: 340px;
-  }
->>>>>>> d7446048e66b5ee6385bd7841f6ebf5edf848f5a
-}
+
+}}
 
 @media (min-width: 1440px) {
   .card-item {
