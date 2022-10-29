@@ -29,58 +29,58 @@ const setMinigames = (datas) => {
   // Card
   // card title color 12 item จำนวนสีที่ใส่ 3, 6 , 12
   const hColor = [
-    "red",
-    "blue",
-    "orange",
+    "#E26868",
+    "#1C3879",
+    "#E26A2C",
 
-    "pink",
-    "green",
-    "yellow",
+    "#9F73AB",
+    "#395144",
+    "#B73E3E",
 
-    "blue",
-    "orange",
-    "pink",
+    "#001253",
+    "#E26A2C",
+    "#815B5B",
 
-    "green",
-    "yellow",
-    "red",
+    "#3F3B6C",
+    "#E9290F",
+    "#B73E3E",
   ];
   //card des color 12 item จำนวนสีที่ใส่ 3, 6 , 12
   let hCount = 0;
   const desColor = [
-    "blue",
-    "red",
-    "pink",
+    "#FF8787",
+    "#495C83",
+    "#ff8243",
 
-    "orange",
-    "green",
-    "yellow",
+    "#9F73AB",
+    "#4E6C50",
+    "#DD5353",
 
-    "orange",
-    "blue",
-    "pink",
+    "#3E6D9C",
+    "#ff8243",
+    "#9E7676",
 
-    "green",
-    "yellow",
-    "red",
+    "#624F82",
+    "#FF6107",
+    "#DD5353",
   ];
   let desCount = 0;
   const genreColor = [
-    "yellow",
-    "blue",
-    "red",
+    "#E26868",
+    "#1C3879",
+    "#ff8243",
 
-    "pink",
-    "orange",
-    "green",
+    "#9F73AB",
+    "#395144",
+    "#B73E3E",
 
-    "yellow",
-    "orange",
-    "blue",
+    "#001253",
+    "#ff8243",
+    "#815B5B",
 
-    "pink",
-    "green",
-    "red",
+    "#3F3B6C",
+    "#FF6107",
+    "#B73E3E",
   ];
   let genreCount = 0;
   Minigames.forEach((ele, index) => {
