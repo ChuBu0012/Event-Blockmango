@@ -18,11 +18,10 @@ const setAssets = (data) => {
   const logo = data.logo;
   const wallpaper = data.wallpaper;
 
-//logo sidebar
-  const logomb = document.createElement('img')
-  logomb.src = logo[0]
-  document.getElementById('logomb')?.appendChild(logomb)
-
+  //logo sidebar
+  const logomb = document.createElement("img");
+  logomb.src = logo[0];
+  document.getElementById("logomb")?.appendChild(logomb);
 
   const slider = document.querySelector(".slider");
   const boxSlide = document.querySelector(".box-slide");
@@ -32,23 +31,28 @@ const setAssets = (data) => {
   // insert characters & logo footer
   const cartoon = document.getElementById("cartoon");
   for (let num = 7; num <= 10; num++) {
-    const crt = document.createElement('img');
+    const crt = document.createElement("img");
     crt.className = "column1";
-    crt.src = characters[num]
-    document.getElementById("crt")?.appendChild(crt);    
-    if(num === 8){
+    crt.src = characters[num];
+    document.getElementById("crt")?.appendChild(crt);
+    if (num === 8) {
       num++;
     }
   }
-  const mng = document.createElement('div');
-  mng.innerHTML = "Create your character."
-  mng.className = "mct"
+  const mng = document.createElement("div");
+  mng.innerHTML = "Create your character.";
+  mng.className = "mct";
   document.getElementById("crt")?.appendChild(mng);
-
+  let width = screen.width;
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
-  cartoon.innerHTML = `<img src='${characters[9]}'>`;
+  if (width <= 368) {
+    cartoon.innerHTML = `<img src='../images/bear_kid_01.png'>`;
+  } else if (width <= 1000 && width >= 768) {
+    cartoon.innerHTML = `<img src='../images/bear_kid_01.png'>`;
+  } else {
+    cartoon.innerHTML = `<img src='${characters[9]}'>`;
+  }
 
-  
   //component slideImg & slideIcon
   banner.reverse();
   banner.forEach((ele, index) => {

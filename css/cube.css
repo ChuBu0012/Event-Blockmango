@@ -110,7 +110,6 @@
   animation: bounce 0.8s infinite;
 }
 
-
 @keyframes bounce {
 
   0%,
@@ -172,11 +171,21 @@
     transform: rotateX(-90deg) translateZ(35px);
   }
 
-
   #cartoon img {
-    height: 240px;
-    width: 420px;
+    height: 280px;
+    width: auto;
+    margin: 0 auto;
     margin-top: -110px;
-    margin-left: -50px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+  .scene{
+    margin-top: -100px;
+  }
+  #cartoon img{
+    height: 420px;
+    padding-left: 0;
   }
 }

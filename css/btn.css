@@ -64,4 +64,16 @@
   }
 }
 
+@media (max-width:500px) {
+  #download{
+    margin-top: -84%;
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+  #download{
+    margin-top: -60%;
+  }
+  
+}
 
