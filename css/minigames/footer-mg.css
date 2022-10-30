@@ -83,3 +83,12 @@ footer {
   color: #fff2bd;
   font-family: "MinecraftTen";
 }
+@media (max-width: 500px) {
+  .edit {
+    font-size: 15px;
+  }
+  .char-left img, .char-right img{
+    top: -1rem;
+    height: 5rem;
+  }
+}

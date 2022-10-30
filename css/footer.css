@@ -84,4 +84,8 @@ footer {
   .edit {
     font-size: 15px;
   }
+  .char-left img, .char-right img{
+    top: -1rem;
+    height: 5rem;
+  }
 }

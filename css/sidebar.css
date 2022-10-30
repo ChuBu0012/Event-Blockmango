@@ -18,6 +18,7 @@
     height: auto;
 }
 .sidebar{
+    font-family: "Bloxat";
     z-index: 700;
     width: 100%;
     position: fixed;

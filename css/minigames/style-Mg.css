@@ -86,3 +86,11 @@ body::before {
 ::-webkit-scrollbar-thumb:hover {
   background: #616161;
 }
+@media (max-width: 500px){
+  .bg-content{
+    width: 200%;
+  }
+  body::before{
+    background-size: auto;
+  }
+}
