@@ -138,7 +138,7 @@ const setMinigames = (datas) => {
 
     let description = ele.description;
     if (description.length > 600) {
-      description = description.substring(0, 400);
+      description = description.substring(0, 406);
       divCardContent.innerHTML += `<p style="color:${desColor[desCount]};">${description}...</p>`;
     } else {
       divCardContent.innerHTML += `<p style="color:${desColor[desCount]};">${description}</p>`;

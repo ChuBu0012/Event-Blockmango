@@ -45,11 +45,10 @@ const setAssets = (data) => {
   document.getElementById("crt")?.appendChild(mng);
   let width = screen.width;
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
-  if (width <= 368) {
-    cartoon.innerHTML = `<img src='../images/bear_kid_01.png'>`;
-  } else if (width <= 1000 && width >= 768) {
-    cartoon.innerHTML = `<img src='../images/bear_kid_01.png'>`;
-  } else {
+  const img = "../images/bear_kid_01.png"
+  if (width <= 1000) {
+    cartoon.innerHTML = `<img src=${img}>`;
+  }  else {
     cartoon.innerHTML = `<img src='${characters[9]}'>`;
   }
 

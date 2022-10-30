@@ -23,18 +23,17 @@ footer {
   align-items: center;
   width: 56%;
 }
-
-.char-left img {
+.char-left img,
+.char-right img {
   height: 20rem;
   position: absolute;
   top: -13rem;
+}
+.char-left img {
   left: 0;
- }
+}
 .char-right img {
- height: 20rem;
- position: absolute;
- top: -13rem;
- right: 0;
+  right: 0;
 }
 
 #lg img {
@@ -45,7 +44,6 @@ footer {
   display: block;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-
 }
 #lg {
   padding-top: 10px;
@@ -87,7 +85,16 @@ footer {
   .edit {
     font-size: 15px;
   }
-  .char-left img, .char-right img{
+  .char-left img,
+  .char-right img {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .char-left img,
+  .char-right img {
+    height: 14rem;
+    top: -7rem;
   }
 }
