@@ -17,12 +17,11 @@ const setAssets = (data) => {
   const characters = data.characters;
   const logo = data.logo;
   const wallpaper = data.wallpaper;
-  console.log(logo);
 
 //logo sidebar
   const logomb = document.createElement('img')
   logomb.src = logo[0]
-  document.getElementById('logomb').appendChild(logomb)
+  document.getElementById('logomb')?.appendChild(logomb)
 
 
   const slider = document.querySelector(".slider");
@@ -36,7 +35,7 @@ const setAssets = (data) => {
     const crt = document.createElement('img');
     crt.className = "column1";
     crt.src = characters[num]
-    document.getElementById("crt").appendChild(crt);    
+    document.getElementById("crt")?.appendChild(crt);    
     if(num === 8){
       num++;
     }
@@ -44,7 +43,7 @@ const setAssets = (data) => {
   const mng = document.createElement('div');
   mng.innerHTML = "Create your character."
   mng.className = "mct"
-  document.getElementById("crt").appendChild(mng);
+  document.getElementById("crt")?.appendChild(mng);
 
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
   cartoon.innerHTML = `<img src='${characters[9]}'>`;
@@ -64,8 +63,8 @@ const setAssets = (data) => {
     img.draggable = false;
     img.addEventListener("dragstart", () => false);
 
-    div.appendChild(img);
-    boxSlide.appendChild(div);
+    div?.appendChild(img);
+    boxSlide?.appendChild(div);
 
     let slideIcon = document.createElement("div");
     if (index === 0) {
@@ -73,7 +72,7 @@ const setAssets = (data) => {
     } else {
       slideIcon.className = "slide-icon";
     }
-    navigationVisibility.appendChild(slideIcon);
+    navigationVisibility?.appendChild(slideIcon);
   });
 
   const slides = document.querySelectorAll(".slide");
