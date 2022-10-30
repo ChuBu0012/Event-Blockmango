@@ -67,7 +67,7 @@
 .home a, .mg a{
     color: #fff;
 }
-@media (max-width: 1000px){
+@media (min-width: 800px){
     .sidebar, #logomb{
         display: none;
     }

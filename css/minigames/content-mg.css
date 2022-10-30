@@ -258,3 +258,8 @@
   }
 
 }
+@media (min-width: 1800px){
+  .card-item:hover{
+    width: 60%;
+  }
+}
