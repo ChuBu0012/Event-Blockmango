@@ -45,7 +45,7 @@ const setAssets = (data) => {
   document.getElementById("crt")?.appendChild(mng);
   let width = screen.width;
   // cartoon.innerHTML = "<img src = '" + characters[9] + "'>";
-  const img = "../images/bear_kid_01.png"
+  const img = "https://imgz.io/images/2022/10/31/bear_kid_01.png"
   if (width <= 1000) {
     cartoon.innerHTML = `<img src=${img}>`;
   }  else {
