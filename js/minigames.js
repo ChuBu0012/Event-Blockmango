@@ -108,7 +108,7 @@ const setMinigames = (datas) => {
     "https://www.blockmango.com/#/game-details/g1046?onlineNumber=10711",
     "https://www.blockmango.com/#/game-details/g2052?onlineNumber=2088",
     "https://www.blockmango.com/#/game-details/g2061?onlineNumber=956",
-    ""
+    "",
   ];
   Minigames.forEach((ele, index) => {
     // card Item
@@ -164,7 +164,7 @@ const setMinigames = (datas) => {
     const playLink = document.createElement("a");
     playLink.target = "_Blank";
     playLink.href =
-      "https://play.google.com/store/apps/details?id=com.sandboxol.blockymods&hl=th&gl=TH";
+      "https://play.google.com/store/apps/details?id=com.app.blockmango";
     const btnPlay = document.createElement("button");
     btnPlay.innerHTML = "Play!";
     playLink?.appendChild(btnPlay);
